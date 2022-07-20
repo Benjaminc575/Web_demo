@@ -1,3 +1,77 @@
 body {
-    background-color: black;
+    background-color: white;
 }
+h1,h2,h3,h4,h6 {
+    color: black;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h5,p{
+    color: white;
+
+}
+.carousel-inner img {
+    margin: auto;
+}
+.Intro {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 25px;
+}
+.hr1 {
+    background-color: rgb(24, 198, 233);
+    height: 15px;
+    border-style: none;
+
+}
+
+/* ---- About me ---- */ 
+.aboutp{
+    color: black;
+    font-size: 20px;
+}
+.about {
+    display: flex;
+    padding: 20px 0;
+    min-height: 50vh;
+    align-items: center;
+  }
+  
+  .about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about .contents {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr;
+  }
+  
+  .about .contents img {
+    width: 500px;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 30%;
+    background-color: rgb(24, 198, 233);
+  }
+  
+  /* changes with smaller screens */
+  @media (min-width: 800px) {
+    .about {
+      padding: 50px 0;
+    }
+  
+    .about h2 {
+      margin-bottom: 50px;
+    }
+  
+    .about .contents {
+      grid-template-columns: 1fr 4fr;
+    }
+  
+    .about .contents img {
+      width: 100%;
+    }
+  }
+  
