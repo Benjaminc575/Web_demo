@@ -1,7 +1,7 @@
 body {
     background-color: white;
 }
-h1,h2,h3,h4,h6 {
+h1,h2,h3,h4 {
     color: black;
     font-size: 100px;
     font-family: Arial, Helvetica, sans-serif;
@@ -56,7 +56,7 @@ h5,p{
     background-color: rgb(24, 198, 233);
   }
   
-  /* changes with smaller screens */
+  /* ---- changes with smaller screens ---- */
   @media (min-width: 800px) {
     .about {
       padding: 50px 0;
@@ -71,7 +71,37 @@ h5,p{
     }
   
     .about .contents img {
-      width: 100%;
+      width: 350px;
     }
   }
+
+  /* ---- contact form ---- */
+  .contactform {
+    border: solid;
+    border-color: white;
+  }
+  /* ---- google map css ---- */
+  .map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+
+  /* ---- Card class ---- */
+  .card {
+    background-color: lightblue;
+  }
+  .card-img-top {
+    border-radius: 10%;
+  }
+
+
   
