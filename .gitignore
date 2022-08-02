@@ -1,3 +1,6 @@
+.DS_Store
+/mongo.js
+
 # Logs
 logs
 *.log
