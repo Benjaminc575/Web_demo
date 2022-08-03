@@ -33,7 +33,7 @@ router.post('/submitContact',(req, res) => {
 
     Contact.collection.insertOne(contact)
     .then(result => {
-        res.render(contact)
+        res.render('contact')
     })
     .catch(err => console.log(err));
 })
