@@ -15,7 +15,7 @@ app.use('/', route);
 
 mongoose.connect(mongo, {useNewURLParser: true, useUnifiedTopology: true})
 .then(() => {
-    app.listen(3000, () => {
+    app.listen(process.env.MONGO_URI||3000, () => {
         console.log("server is running on 3000")
     })
 })
