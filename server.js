@@ -8,9 +8,6 @@ const app = express();
 const uri = process.env.MONGO_URI;
 
 
-// set and connect db 
-console.log(process.env.DBHOST)
-
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')))
