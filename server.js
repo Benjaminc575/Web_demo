@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const route = require('./route/pages');
 const path = require('path');
 const app = express();
+const uri = process.env.MONGO_URI;
 
 
 // set and connect db 

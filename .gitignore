@@ -1,9 +1,9 @@
 .DS_Store
-#/mongo.js
+/mongo.js
 npm-debug.log
 
 
-#/*.env
+/*.env
 
 # Logs
 logs
