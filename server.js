@@ -8,8 +8,7 @@ const app = express();
 
 
 // set and connect db 
-//console.log(process.env.DBHOST)
-
+console.log(process.env.DBHOST)
 
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended: true}));
