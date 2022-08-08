@@ -6,6 +6,11 @@ const route = require('./route/pages');
 const path = require('path');
 const app = express();
 
+
+// set and connect db 
+console.log(process.env.DBHOST)
+
+
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')))
