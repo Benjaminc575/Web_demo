@@ -1,4 +1,4 @@
-const mongo = require('./mongo');
+const mongo = require('./mongo.js');
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
