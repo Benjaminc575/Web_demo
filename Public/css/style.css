@@ -7,25 +7,31 @@ h1,h2,h3,h4 {
     font-family: Arial, Helvetica, sans-serif;
 }
 .heading{
-  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
-  margin-top: 28px;
-  margin-left: 650px;
+  position: relative;
+  text-align: center;
 }
 h5,p{
     color: white;
 
 }
-.carousel-inner img {
-    margin: auto;
-    
+.carousel {
+  width:1000px;
+  height:800px;  
+  margin: auto; 
 }
+.carousel-item .carousel-inner img  {
+  margin: auto;
+  
+}
+
 .Intro {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 25px;
-    text-align: center;
+    text-align: center; 
+    position: relative;
 }
 .hr1 {
     background-color: rgb(24, 198, 233);
@@ -44,26 +50,26 @@ h5,p{
     padding: 20px 0;
     min-height: 50vh;
     align-items: center;
-  }
+}
   
-  .about h2 {
+.about h2 {
     text-align: center;
     margin-bottom: 20px;
-  }
+}
   
-  .about .contents {
+.about .contents {
     display: grid;
     grid-gap: 50px;
     grid-template-columns: 1fr;
-  }
+}
   
-  .about .contents {
-    width: 50px;
+.about .contents img {
+    width: 500px;
     padding: 5px;
-    margin: 0 ;
+    margin: 0 auto;
     border-radius: 30%;
     background-color: rgb(24, 198, 233);
-  }
+}
   
   /* ---- changes with smaller screens ---- */
   @media (min-width: 800px) {
@@ -82,7 +88,7 @@ h5,p{
     .about .contents img {
       width: 350px;
     }
-  }
+}
 
   /* ---- contact form ---- */
   .contactform {
