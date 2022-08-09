@@ -6,4 +6,4 @@ npm-debug.log
 
 /*.
 
-/mongo.js
+.mongo.js
