@@ -57,10 +57,10 @@ h5,p{
     grid-template-columns: 1fr;
   }
   
-  .about .contents img {
-    width: 500px;
+  .about .contents {
+    width: 50px;
     padding: 5px;
-    margin: 0 auto;
+    margin: 0 ;
     border-radius: 30%;
     background-color: rgb(24, 198, 233);
   }
