@@ -5,8 +5,8 @@ const mongoose = require('mongoose');
 const route = require('./route/pages');
 const path = require('path');
 const app = express();
-//const uri = process.env.MONGODB_URI;
-const uri = process.env.MONGO_URI;
+const uri = process.env.MONGODB_URI;
+
 
 
 app.set('view engine', 'ejs')
