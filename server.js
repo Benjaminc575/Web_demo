@@ -1,4 +1,4 @@
-const mongo = require('./mongo.js');
+const mongo = require('./mongo');
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -16,7 +16,7 @@ app.use('/', route);
 
 mongoose.connect(mongo, {useNewURLParser: true, useUnifiedTopology: true})
 .then(() => {
-    app.listen(process.env.PORT||3000, () => {
+    app.listen(process.env.PORT||3000, function() {
         console.log("server is running on 3000")
     })
 })
