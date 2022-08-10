@@ -20,7 +20,7 @@ app.use('/', route);
 mongoose.connect(mongo, {useNewURLParser: true, useUnifiedTopology: true})
 .then(() => {
     app.listen(port, ()=> {
-        console.log('Listening on port ${port}')
+        console.log(`Listening on port ${port}`)
     })
 })
 
