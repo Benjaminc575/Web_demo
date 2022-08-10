@@ -12,6 +12,12 @@ h1,h2,h3,h4 {
   position: relative;
   text-align: center;
 }
+.navbar-center {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
 h5,p{
     color: white;
 
