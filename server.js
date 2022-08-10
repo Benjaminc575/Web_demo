@@ -14,7 +14,7 @@ if (port == null || port == ""){
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 app.use('/', route);
 
 mongoose.connect(mongo, {useNewURLParser: true, useUnifiedTopology: true})
