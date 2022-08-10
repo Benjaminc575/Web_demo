@@ -5,19 +5,17 @@ const mongoose = require('mongoose');
 const route = require('./route/pages');
 const path = require('path');
 const app = express();
-const uri = process.env.MONGO_URI;
+const uri = process.env.MONGODB_URI;
 
-
-
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', route);
 
 mongoose.connect(mongo, {useNewURLParser: true, useUnifiedTopology: true})
 .then(() => {
-    app.listen(process.env.PORT||3000, function() {
-        console.log("server is running on 3000")
+    app.listen(process.env.PORT||3000, ()=> {
+        console.log("Server is running on 3000")
     })
 })
 
